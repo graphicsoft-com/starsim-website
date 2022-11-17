@@ -1,125 +1,153 @@
 @import url("https://fonts.googleapis.com/css?family=Titillium+Web");
+
 * {
-  font-family: "Titillium Web", sans-serif;
+    font-family: "Titillium Web", sans-serif;
 }
+
 /* ---------- navbar --------------- */
-:root{
-    --primary :  #1063B6;
+:root {
+    --primary: #1063B6;
 }
-button{
+
+button {
     border: none;
+    outline: 0 !important;
 }
-.navbar{
-  background:#EBEBF0;
-  position: sticky;
-  top:0;
+
+.navbar {
+    background: #EBEBF0;
+    position: fixed !important;
+    top: 0;
+    width: 100vw;
+    z-index: 99;
 }
-a.nav-link{
-  color:black !important;
+
+a.nav-link {
+    color: black !important;
 }
+
 .navbar .navbar-brand {
-  font-size: 30px;
+    font-size: 30px;
 }
+
 .navbar .nav-item {
-  padding: 10px 20px;
+    padding: 10px 20px;
 }
+
 .navbar .nav-link {
-  font-size: 20px;
-  margin-left: 10px;
+    font-size: 20px;
+    margin-left: 10px;
 }
+
 .fa-bars {
-  color: #0870D8;
-  font-size: 30px;
+    color: #0870D8;
+    font-size: 30px;
 }
-.contactBtn,li.nav-item{
-  display:flex;
-  justify-content:center;
+
+.contactBtn, li.nav-item {
+    display: flex;
+    justify-content: center;
 }
-.navbar-brand{
+
+.navbar-brand {
     color: #0870D8;
 }
-.contactBtn button{
-  width: max-content;
-  background:#0870D8;
-  border:none;
-  color:white;
-  display: flex;
+
+.contactBtn button {
+    width: max-content;
+    background: #0870D8;
+    border: none;
+    color: white;
+    display: flex;
 
     justify-content: center;
     align-items: flex-start;
     padding: 10px 12px;
 
-  border-radius: 10px;
-  width: 181px;
+    border-radius: 10px;
+    width: 181px;
 
 }
 
 
-.container{
-  max-width:100% !important;
+.container {
+    max-width: 100% !important;
 }
+
 /* --------- header -------- */
-header{
+header {
     height: 50vw;
     overflow: hidden;
+    margin-top: 71px;
 
 }
-header img{
-width: 100%;
+
+header img {
+    width: 100%;
 }
-header .floating-deck{
-position: absolute;
-background: rgba(8, 112, 216, 0.7);
-width: 50%;
-height: calc(100vw * .39);
-top: calc(140 * .1vw);
-left: 5%;
-color: white;
-padding: 10px;
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
+
+header .floating-deck {
+    position: absolute;
+    background: rgba(8, 112, 216, 0.7);
+    width: 50%;
+    height: calc(100vw * .39);
+    top: calc(140 * .1vw);
+    left: 5%;
+    color: white;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
 }
-header .floating-deck p{
+
+header .floating-deck p {
     max-width: 388px;
 }
-header .floating-deck span button{
+
+header .floating-deck span button {
     border-radius: 10px;
     padding: 10px 19px;
-    
-    }
-    header .floating-deck span button.join{
-        background: #19D3C5;
-        color: #FAFAFC;
-    }
-    header .floating-deck span button.more{
-        background: #FAFAFC;
-        color: #15A297;
-    }
+
+}
+
+header .floating-deck span button.join {
+    background: #19D3C5;
+    color: #FAFAFC;
+}
+
+header .floating-deck span button.more {
+    background: #FAFAFC;
+    color: #15A297;
+}
+
 /* ----- main  ----------- */
 
 /* logo row */
-.logo-3d{
+.logo-3d {
     display: table;
     background-color: #19D3C5;
     width: 100%;
     text-align: center;
-  
+
 }
-.logo-3d img{
-    height: calc(110 * ( 100vw / 1920 ));
+
+.logo-3d img {
+    height: calc(110 * (100vw / 1920));
     margin: 20px 10px;
 }
-.about-us{
+
+.about-us {
     padding: 7% 20%;
-    
+
 }
-.about-us p{
+
+.about-us p {
     font-size: 2vw;
 }
-.about-us h1{
+
+.about-us h1 {
     font-size: 5vw;
 
 }
@@ -128,22 +156,26 @@ header .floating-deck span button{
 
 /* gallery */
 
-.gallery .title{
+.gallery .title {
     font-weight: 1000;
 }
-.primary{
+
+.primary {
     color: var(--primary);
 }
+
 .gallery .imgBox {
     padding-right: 0;
     padding-left: 0;
     padding: 10px;
 }
-.gallery .imgBox img{
+
+.gallery .imgBox img {
     max-width: 100%;
     height: auto;
     object-fit: cover;
 }
+
 /* owners */
 .owners {
     min-height: 300px;
@@ -152,9 +184,10 @@ header .floating-deck span button{
     background-position: center;
     position: relative;
 }
-.owners .mainBox{
+
+.owners .mainBox {
     position: absolute;
-    top:0;
+    top: 0;
     left: 0;
     right: 0;
     bottom: 0;
@@ -162,19 +195,21 @@ header .floating-deck span button{
     background: rgba(8, 112, 216, 0.7);
     height: 100% !important;
 }
-.owners .ownerBox{
+
+.owners .ownerBox {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     color: #fff;
 }
-.owners .ownerBox a{
+
+.owners .ownerBox a {
     color: #fff;
 }
 
 /* contact */
-.contact input, .contact textarea{
+.contact input, .contact textarea {
     width: 100%;
     background: #F2F2F5;
     border: 2px solid var(--primary);
@@ -182,14 +217,17 @@ header .floating-deck span button{
     font-size: 24px;
     padding: 5px;
 }
-.contact input{
+
+.contact input {
     height: 40px;
 }
-.contact input:focus, .contact textarea:focus{
+
+.contact input:focus, .contact textarea:focus {
     outline: none;
     border: 3px solid var(--primary);
 }
-.contact button{
+
+.contact button {
     background: var(--primary);
     color: #fff;
     border: none;
@@ -198,15 +236,18 @@ header .floating-deck span button{
     padding: 10px 40px;
     cursor: pointer;
 }
-.contact button:focus{
+
+.contact button:focus {
     outline: none;
 }
-.contact button:hover{
+
+.contact button:hover {
     background: #fff;
     color: var(--primary);
     border: 2px solid var(--primary);
     transition: 0.5s;
 }
+
 /* footer */
 footer {
     background-color: var(--primary);
@@ -216,46 +257,113 @@ footer {
     height: 60px;
 }
 
+@media only screen and (min-width: 800px) {
+    .logo-3d img {
+        height: calc(80 * (100vw / 1920));
+        margin: 40px 30px;
+    }
+
+    header .floating-deck {
+
+        height: calc(100vw * .26);
+    }
+
+    header .floating-deck p {
+        max-width: 488px;
+        font-size: 1.2vw;
+    }
+
+    header .floating-deck h2 {
+        font-size: 3vw;
+    }
+
+}
 
 @media only screen and (min-width: 1240px) {
-    header .floating-deck{
+    header .floating-deck {
         top: calc(140 * .08vw);
     }
 
 }
-@media only screen and (min-width: 800px) {
-    .logo-3d img{
-        height: calc(80 * ( 100vw / 1920 ));
-        margin: 40px 30px;
+
+@media only screen and (min-width: 1400px) {
+
+    header {
+        height: 40vw;
     }
 
+    header .floating-deck {
+
+        height: calc(100vw * .26);
+    }
+
+    header .floating-deck p {
+        max-width: 488px;
+        font-size: 1.2vw;
+    }
+
+    header .floating-deck h2 {
+        font-size: 3vw;
+    }
 }
 
+
+
 @media only screen and (max-width: 900px) {
-    header .floating-deck{
+    header .floating-deck {
         top: calc(140 * .12vw);
     }
 }
+
 @media only screen and (max-width: 575px) {
-    
-    header .floating-deck{
-       top: 100px;
-       width:90%;
+
+    header .floating-deck {
+        top: 80px;
+        width: 90%;
+        height: 180px;
     }
+
     .about-us h1 {
         font-size: 2.5rem;
     }
-    .about-us p{
-      font-size: 12px;
+
+    .about-us p {
+        font-size: 12px;
+    }
+
+    header .floating-deck span button {
+        padding: 5px 15px;
+    }
+
+    header .floating-deck h2 {
+        font-size: 1.4rem;
     }
 }
 
 
 @media only screen and (max-width: 400px) {
-    .logo-3d img{
-        height: calc(100 * ( 100vw / 1920 ));
-        
+
+    header {
+        height: 55%;
+    }
+
+    header .floating-deck {
+        top: 75px;
+        width: 90%;
+        height: 185px;
 
     }
-  
+
+    .logo-3d img {
+        height: calc(100 * (100vw / 1920));
+    }
+
+    header .floating-deck h2 {
+        font-size: 1.2rem;
+    }
+
+    .logo-3d img {
+        height: calc(140 * (100vw / 1920));
+        margin: 20px 30px;
+    }
 }
