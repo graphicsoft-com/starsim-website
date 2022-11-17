@@ -12,6 +12,7 @@
 button {
     border: none;
     outline: 0 !important;
+    cursor: pointer;
 }
 
 .navbar {
@@ -22,12 +23,16 @@ button {
     z-index: 999;
 }
 
+.navbar a:hover {
+    text-decoration: none;
+}
+
 a.nav-link {
     color: black !important;
 }
 
-.navbar .navbar-brand {
-    font-size: 30px;
+.navbar .navbar-brand img {
+    height: 80px;
 }
 
 .navbar .nav-item {
@@ -59,14 +64,12 @@ a.nav-link {
     border: none;
     color: white;
     display: flex;
-
     justify-content: center;
     align-items: flex-start;
-    padding: 10px 12px;
-
+    padding: 15px 12px;
+    font-size: 115%;
     border-radius: 10px;
     width: 181px;
-
 }
 
 
@@ -78,7 +81,7 @@ a.nav-link {
 header {
     height: 50vw;
     overflow: hidden;
-    margin-top: 71px;
+    margin-top: 106px;
 
 }
 
@@ -104,6 +107,13 @@ header .floating-deck {
 
 header .floating-deck p {
     max-width: 388px;
+
+    font-size: 2vw;
+
+}
+
+header .floating-deck h2 {
+    font-size: 1.5rem;
 }
 
 header .floating-deck span button {
@@ -138,23 +148,26 @@ header .floating-deck span button.more {
     margin: 20px 10px;
 }
 
-.about{
+.about {
     background: #f2f2f2;
     padding-top: 20px;
 }
-.about h1{
+
+.about h1 {
     font-weight: 800;
 }
-.about .imgBox img{
+
+.about .imgBox img {
     max-width: 100%;
     height: auto;
 }
-.about .aboutText{
+
+.about .aboutText {
     padding: 20px;
     font-size: 24px;
 }
 
-.gallery{
+.gallery {
     margin-top: 30px;
 }
 
@@ -213,13 +226,20 @@ header .floating-deck span button.more {
     color: #fff;
 }
 
+.ownerBox img {
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
 /* contact */
 .contact input, .contact textarea {
     width: 100%;
     background: #F2F2F5;
     border: 2px solid var(--primary);
     border-radius: 10px;
-    font-size: 24px;
+    font-size: 18px;
     padding: 5px;
 }
 
@@ -316,16 +336,17 @@ footer {
 
 @media only screen and (max-width: 900px) {
     header .floating-deck {
-        top: calc(140 * .12vw);
+        top: calc(140 * .15vw);
     }
 }
 
 @media only screen and (max-width: 575px) {
 
     header .floating-deck {
-        top: 80px;
+        top: 115px;
         width: 90%;
-        height: 180px;
+        height: 200px;
+
     }
 
     .about-us h1 {
@@ -343,6 +364,38 @@ footer {
     header .floating-deck h2 {
         font-size: 1.4rem;
     }
+
+    .aboutText {
+        font-size: 14px;
+    }
+
+    h4 {
+        font-size: 1rem !important;
+    }
+
+    .about h2 {
+        font-size: 18px;
+    }
+
+    .owners {
+        height: 600px;
+    }
+
+    .owners h3 {
+        font: 1.1rem;
+    }
+
+    .contact {
+        font-size: 1rem;
+    }
+
+    header .floating-deck p {
+        font-size: 2.5vw;
+    }
+
+    .about .aboutText {
+        font-size: 16px;
+    }
 }
 
 
@@ -353,7 +406,7 @@ footer {
     }
 
     header .floating-deck {
-        top: 75px;
+        top: 110px;
         width: 90%;
         height: 185px;
 
@@ -371,12 +424,22 @@ footer {
         height: calc(140 * (100vw / 1920));
         margin: 20px 30px;
     }
-}
-@media only screen and (max-width: 350px) {
-    header .floating-deck  {
-        height: 155px;
+
+    header .floating-deck p {
+        font-size: 3vw;
     }
-    header .floating-deck p{
+}
+
+@media only screen and (max-width: 350px) {
+    header .floating-deck {
+        height: 180px;
+    }
+
+    header .floating-deck p {
         font-size: 12px;
+    }
+
+    header .floating-deck span {
+        display: none !important;
     }
 }
