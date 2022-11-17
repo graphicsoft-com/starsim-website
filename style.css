@@ -53,3 +53,11 @@ padding: 10px 12px;
 .container{
   max-width:100% !important;
 }
+.logo-3d{
+    display: table;
+    background-color: #19D3C5;
+    width: 100%;
+}
+.logo-3d img{
+    height: calc(110 * ( 100vw / 1920 ));
+}
