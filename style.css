@@ -2,9 +2,12 @@
 * {
   font-family: "Titillium Web", sans-serif;
 }
-/* navbar */
+/* ---------- navbar --------------- */
 body{
 
+}
+button{
+    border: none;
 }
 .navbar{
   background:#EBEBF0;
@@ -42,23 +45,124 @@ a.nav-link{
   color:white;
   display: flex;
 
-justify-content: center;
-align-items: flex-start;
-padding: 10px 12px;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 10px 12px;
 
   border-radius: 10px;
   width: 181px;
 
 }
+
+
 .container{
   max-width:100% !important;
 }
+/* --------- header -------- */
+header{
+    height: 50vw;
+    overflow: hidden;
+
+}
+header img{
+width: 100%;
+}
+header .floating-deck{
+position: absolute;
+background: rgba(8, 112, 216, 0.7);
+width: 50%;
+height: calc(100vw * .39);
+top: calc(140 * .1vw);
+left: 5%;
+color: white;
+padding: 10px;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+
+}
+header .floating-deck p{
+    max-width: 388px;
+}
+header .floating-deck span button{
+    border-radius: 10px;
+    padding: 10px 19px;
+    
+    }
+    header .floating-deck span button.join{
+        background: #19D3C5;
+        color: #FAFAFC;
+    }
+    header .floating-deck span button.more{
+        background: #FAFAFC;
+        color: #15A297;
+    }
+/* ----- main  ----------- */
+
+/* logo row */
 .logo-3d{
     display: table;
     background-color: #19D3C5;
     width: 100%;
+    text-align: center;
+  
 }
 .logo-3d img{
     height: calc(110 * ( 100vw / 1920 ));
-    margin: 0 10px;
+    margin: 20px 10px;
+}
+.about-us{
+    padding: 7% 20%;
+    
+}
+.about-us p{
+    font-size: 2vw;
+}
+.about-us h1{
+    font-size: 5vw;
+
+}
+
+@media only screen and (min-width: 1240px) {
+    header .floating-deck{
+        top: calc(140 * .08vw);
+    }
+
+}
+@media only screen and (min-width: 800px) {
+    .logo-3d img{
+        height: calc(80 * ( 100vw / 1920 ));
+        margin: 40px 30px;
+    }
+
+}
+
+@media only screen and (max-width: 900px) {
+    header .floating-deck{
+        top: calc(140 * .12vw);
+    }
+}
+@media only screen and (max-width: 575px) {
+    
+    header .floating-deck{
+       top: 100px;
+       width:90%;
+    }
+    .about-us h1 {
+        font-size: 2.5rem;
+    }
+    .about-us p{
+      font-size: 12px;
+    }
+}
+
+
+@media only screen and (max-width: 400px) {
+    .logo-3d img{
+        height: calc(100 * ( 100vw / 1920 ));
+        
+
+    }
+  
 }
