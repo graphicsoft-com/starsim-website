@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css?family=Titillium+Web");
+* {
+  font-family: "Titillium Web", sans-serif;
+}
+/* navbar */
+body{
+
+}
+.navbar{
+  background:#EBEBF0;
+  position: sticky;
+  top:0;
+}
+a.nav-link{
+  color:black !important;
+}
+.navbar .navbar-brand {
+  font-size: 30px;
+}
+.navbar .nav-item {
+  padding: 10px 20px;
+}
+.navbar .nav-link {
+  font-size: 20px;
+  margin-left: 10px;
+}
+.fa-bars {
+  color: #0870D8;
+  font-size: 30px;
+}
+.contactBtn,li.nav-item{
+  display:flex;
+  justify-content:center;
+}
+.navbar-brand{
+    color: #0870D8;
+}
+.contactBtn button{
+  width: max-content;
+  background:#0870D8;
+  border:none;
+  color:white;
+  display: flex;
+
+justify-content: center;
+align-items: flex-start;
+padding: 10px 12px;
+
+  border-radius: 10px;
+  width: 181px;
+
+}
+.container{
+  max-width:100% !important;
+}
