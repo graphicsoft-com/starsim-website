@@ -19,7 +19,7 @@ button {
     position: fixed !important;
     top: 0;
     width: 100vw;
-    z-index: 99;
+    z-index: 999;
 }
 
 a.nav-link {
@@ -138,20 +138,25 @@ header .floating-deck span button.more {
     margin: 20px 10px;
 }
 
-.about-us {
-    padding: 7% 20%;
-
+.about{
+    background: #f2f2f2;
+    padding-top: 20px;
+}
+.about h1{
+    font-weight: 800;
+}
+.about .imgBox img{
+    max-width: 100%;
+    height: auto;
+}
+.about .aboutText{
+    padding: 20px;
+    font-size: 24px;
 }
 
-.about-us p {
-    font-size: 2vw;
+.gallery{
+    margin-top: 30px;
 }
-
-.about-us h1 {
-    font-size: 5vw;
-
-}
-
 
 
 /* gallery */
@@ -365,5 +370,13 @@ footer {
     .logo-3d img {
         height: calc(140 * (100vw / 1920));
         margin: 20px 30px;
+    }
+}
+@media only screen and (max-width: 350px) {
+    header .floating-deck  {
+        height: 155px;
+    }
+    header .floating-deck p{
+        font-size: 12px;
     }
 }
