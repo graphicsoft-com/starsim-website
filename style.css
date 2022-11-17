@@ -60,4 +60,5 @@ padding: 10px 12px;
 }
 .logo-3d img{
     height: calc(110 * ( 100vw / 1920 ));
+    margin: 0 10px;
 }
