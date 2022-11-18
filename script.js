@@ -43,14 +43,27 @@ var testConnectionSpeed = {
 testConnectionSpeed.run(
   1,
   function (mbps) {
-
-    if (mbps > 25) {
-      console.log(">= 25Mbps (" + mbps + "Mbps)");
+    if (mbps > 20) {
+    	console.log(">= 20Mbps (" + mbps + "Mbps)");
+    	let box1 = document.getElementById("box1");
+		let box2 = document.getElementById("box2");
+		let box3 = document.getElementById("box3");
+		box1.innerHTML = `
+						<video controls autoplay muted> 
+						  	<source src="https://dx527nn108mr8.cloudfront.net/f2a950a0-8875-4aed-a0e4-8fdb6cc5efc8/Sim 96.mov" />
+			    		</video>`;
+		box2.innerHTML = `
+						<video controls> 
+						  	<source src="https://dx527nn108mr8.cloudfront.net/4d4ef28d-ae4a-49f5-8d4c-d774ffa022cd/Sim 92 Drain Test.mov" />
+			    		</video>`;
+		box3.innerHTML = `
+						<video controls> 
+						  	<source src="https://dx527nn108mr8.cloudfront.net/starSim/bob/634983c11abf1/Sim121_Camera_Video.mp4" />
+			    		</video>`;
     
-    } else if (mbps > 10) {
-      console.log(">= 10Mbps (" + mbps + "Mbps)");
-    } else {
-      console.log("< 10Mbps (" + mbps + "Mbps)");
+    }
+    else {
+    	console.log("< 10Mbps (" + mbps + "Mbps)");
     }
   }
 );

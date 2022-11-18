@@ -85,7 +85,7 @@ header {
 
 }
 
-header img {
+header img,header video {
     width: 100%;
 }
 
@@ -188,7 +188,7 @@ header .floating-deck span button.more {
     padding: 10px;
 }
 
-.gallery .imgBox img {
+.gallery .imgBox img,.gallery .imgBox video {
     max-width: 100%;
     height: auto;
     object-fit: cover;
