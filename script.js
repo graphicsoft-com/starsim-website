@@ -43,11 +43,27 @@ var testConnectionSpeed = {
 testConnectionSpeed.run(
   1,
   function (mbps) {
-    if (mbps > 20) {
+	let box1 = document.getElementById("box1");
+	let box2 = document.getElementById("box2");
+	let box3 = document.getElementById("box3");
+	if(mbps>50){
+		box1.innerHTML =`
+			<iframe src="https://mogul.live/editor/player.php?id=f2a950a0-8875-4aed-a0e4-8fdb6cc5efc8">
+			</irame>
+		`;
+		box2.innerHTML =`
+			<iframe src="https://mogul.live/editor/player.php?id=4d4ef28d-ae4a-49f5-8d4c-d774ffa022cd">
+			</irame>
+		`;
+		box3.innerHTML =`
+			<iframe src="https://mogul.live/editor/player.php?id=10e9c697-5090-4138-99de-83efff023ad2">
+			</irame>
+		`;
+		
+	}
+    else if (mbps > 20) {
     	console.log(">= 20Mbps (" + mbps + "Mbps)");
-    	let box1 = document.getElementById("box1");
-		let box2 = document.getElementById("box2");
-		let box3 = document.getElementById("box3");
+    	
 		box1.innerHTML = `
 						<video controls autoplay muted> 
 						  	<source src="https://dx527nn108mr8.cloudfront.net/f2a950a0-8875-4aed-a0e4-8fdb6cc5efc8/Sim 96.mov" />

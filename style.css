@@ -188,7 +188,7 @@ header .floating-deck span button.more {
     padding: 10px;
 }
 
-.gallery .imgBox img,.gallery .imgBox video {
+.gallery .imgBox img,.gallery .imgBox video  {
     max-width: 100%;
     height: auto;
     object-fit: cover;
@@ -197,6 +197,12 @@ header .floating-deck span button.more {
     height: 100%;
     width: 100%;
 }
+.gallery .imgBox iframe {
+    border: none;
+    height: 300px;
+    width: 100%;
+}
+
 
 /* owners */
 .owners {
