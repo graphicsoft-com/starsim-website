@@ -193,6 +193,10 @@ header .floating-deck span button.more {
     height: auto;
     object-fit: cover;
 }
+.gallery .imgBox video {
+    height: 100%;
+    width: 100%;
+}
 
 /* owners */
 .owners {
